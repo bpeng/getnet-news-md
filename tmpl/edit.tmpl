@@ -1,0 +1,49 @@
+{{ define "content" }}
+<div class="content">
+    <div class="page-header">
+        <h1>GeoNet News</h1>
+    </div>
+
+    <ol class="breadcrumb">
+        <li><a href="/"> Home </a></li>
+        <li>Edit</li>
+    </ol>
+
+    <div class="row">
+        <div class="col-md-offset-1 col-md-4">
+            <h3>Edit News </h3>
+        </div>
+    </div>
+
+    <form id="newsEditForm" class="form-horizontal" action="/save" method="post">
+        <div class="form-group">
+            <label for="postTitle" class="control-label  col-md-1">Title</label>
+            <div class="col-md-10">
+                <input id="postTitle" class="form-control" name="postTitle" type="text" value="{{.MarkDown.Title}}"> </input>
+            </div>
+        </div>
+        <div class="form-group">
+          <div class="col-md-11">
+            <a class="pull-right" href="https://guides.github.com/features/mastering-markdown/" target="_blank">
+                Markdown supported
+            </a>
+          </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-1 col-md-10">
+                <textarea id="postContent" name="postContent" class="col-md-10 form-control" rows="20" cols="80" wrap="hard">{{.MarkDown.MdContent}}</textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-1 col-md-10">
+                <input value="Preview" id="btnPreview" type="button" class="btn btn-primary">
+                </input>
+                &nbsp;
+                <input value="Submit" id="btnSubmit" type="submit" class="btn btn-primary">
+                </input>
+            </div>
+        </div>
+    </form>
+    <br/>
+</div>
+{{ end }}
