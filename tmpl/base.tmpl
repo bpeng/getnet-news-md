@@ -17,6 +17,19 @@
 </html>
 {{ end }}
 
+<!--the html preview page to be exported -->
+{{ define "htmlPage" }}
+<html>
+<head>
+  {{ template "header" . }}
+</head>
+
+<body>
+  {{ template "content" . }}
+</body>
+</html>
+{{ end }}
+
 <!--#########################-->
 <!--define common templates below: header, footer, navbar -->
 {{define "header"}}

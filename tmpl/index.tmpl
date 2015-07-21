@@ -20,7 +20,7 @@
     <div>
         <!-- news details goes here -->
         {{range $index, $element := .AllMarkdown}}
-          <a href="/edit?mdname={{$element.FileName}}">{{$element.Title}} </a>
+         <p> <a href="/edit?mdname={{$element.FileName}}">{{$element.Title}} </a>  </p>
         {{end}}
     </div>
 </div>
