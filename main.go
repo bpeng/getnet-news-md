@@ -6,6 +6,7 @@ import (
 	"github.com/GeoNet/cfg"
 	"github.com/russross/blackfriday"
 	"html/template"
+	"io"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -28,6 +29,7 @@ func init() {
 
 	//handle css files
 	http.Handle("/css/", http.StripPrefix("/css/", http.FileServer(http.Dir("css"))))
+	http.Handle("/_images/", http.StripPrefix("/_images/", http.FileServer(http.Dir("_images"))))
 
 	// set up html options
 	htmlExt = 0
@@ -99,10 +101,11 @@ func editPage(w http.ResponseWriter, r *http.Request) {
 }
 
 func savePage(w http.ResponseWriter, r *http.Request) {
-	err := r.ParseForm()
+	err := r.ParseMultipartForm(100000)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusNotAcceptable)
 	}
+
 	title := r.Form["postTitle"][0]
 
 	log.Println("title ", title)
@@ -110,10 +113,57 @@ func savePage(w http.ResponseWriter, r *http.Request) {
 	content := r.Form["postContent"][0]
 	//log.Println("content ", content);
 	preview := r.Form["preview"][0]
-
+	//log.Println("preview ", preview)
 	if preview == "1" {
-		log.Println("preview ", preview)
+		//log.Println("preview ", preview)
 		previewPage(w, r, title, content)
+	} else if preview == "2" { //load images
+		//get a ref to the parsed multipart form
+		m := r.MultipartForm
+		//get the *fileheaders
+		files := m.File["imagefiles"]
+		var imgContents string
+		for i, _ := range files {
+			//for each fileheader, get a handle to the actual file
+			file, err := files[i].Open()
+			defer file.Close()
+			if err != nil {
+				http.Error(w, err.Error(), http.StatusInternalServerError)
+				return
+			}
+			//create destination file making sure the path is writeable.
+			//log.Println("images file  ", files[i].Filename)
+			dst, err := os.Create(img_dir + files[i].Filename)
+			defer dst.Close()
+			if err != nil {
+				http.Error(w, err.Error(), http.StatusInternalServerError)
+				return
+			}
+			//copy the uploaded file to the destination file
+			if _, err := io.Copy(dst, file); err != nil {
+				http.Error(w, err.Error(), http.StatusInternalServerError)
+				return
+			}
+			//  ![Image of yaktocat](https://octodex.github.com/images/yaktocat.png)
+			imgTitle := files[i].Filename
+			last := strings.LastIndex(imgTitle, ".")
+
+			if last > 0 && last < len(imgTitle) {
+				imgTitle = imgTitle[0:last]
+			}
+
+			log.Println("imgTitle", imgTitle)
+			imgContents += "![" + imgTitle + "](" + img_dir + files[i].Filename + ")\n"
+		}
+		//append uploaded images to end of md content
+		content += imgContents
+		mdData := MarkdownData{}
+		pageData := PageData{Title: "GeoNet News"}
+		mdData.Title = title
+		mdData.MdContent = content
+		pageData.MarkDown = mdData
+		//show edit page again
+		renderTemplate(w, "edit", pageData)
 
 	} else {
 		//save md content

@@ -2,6 +2,7 @@
 <script>
 function changePreview(value){
    document.getElementById("preview").value= value;
+   console.log("value " + value);
 }
 </script>
 <div class="content">
@@ -31,30 +32,42 @@ function changePreview(value){
         </div>
     </div>
 
-    <form id="newsEditForm" class="form-horizontal" action="/save" method="post">
+    <form id="newsEditForm" class="form-horizontal" action="/save" method="post" enctype="multipart/form-data">
         <input type="hidden" name="preview" id="preview" value="0"/>
+
         <div class="form-group">
             <label for="postTitle" class="control-label  col-md-1">Title</label>
+
             <div class="col-md-10">
-                <input id="postTitle" class="form-control" name="postTitle" type="text" value="{{.MarkDown.Title}}"> </input>
+                <input id="postTitle" class="form-control" name="postTitle" type="text"
+                       value="{{.MarkDown.Title}}"> </input>
             </div>
         </div>
         <div class="form-group">
-          <div class="col-md-11">
-            <a class="pull-right" href="https://guides.github.com/features/mastering-markdown/" target="_blank">
+            <div class="col-md-offset-1 col-md-2">
+                <input type="file" name="imagefiles" id="imagefiles" multiple="multiple"> </input>
+            </div>
+            <div class="col-md-1">
+                <input class="btn btn-primary" value="Upload Images" id="btnUpload" type="submit"
+                       onclick="changePreview(2);">
+                </input>
+            </div>
+            <a class="col-md-offset-1 col-md-2" href="https://guides.github.com/features/mastering-markdown/"
+               target="_blank">
                 Markdown supported
             </a>
-          </div>
         </div>
 
         <div class="form-group">
             <div class="col-md-offset-1 col-md-10">
-                <textarea id="postContent" name="postContent" class="col-md-10 form-control" rows="20" cols="80" wrap="hard">{{.MarkDown.MdContent}}</textarea>
+                <textarea id="postContent" name="postContent" class="col-md-10 form-control" rows="20" cols="80" >{{.MarkDown.MdContent}}</textarea>
             </div>
         </div>
         <div class="form-group">
             <div class="col-md-offset-1 col-md-10">
-                <input value="Preview" id="btnPreview" type="submit" class="btn btn-primary" onclick="changePreview(1);">
+
+                <input value="Preview" id="btnPreview" type="submit" class="btn btn-primary"
+                       onclick="changePreview(1);">
                 </input>
                 &nbsp;
                 <input value="Submit" id="btnSubmit" type="submit" class="btn btn-primary">
