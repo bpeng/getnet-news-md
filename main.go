@@ -59,7 +59,7 @@ func main() {
 
 	http.HandleFunc("/save", savePage)
 
-	log.Fatal(http.ListenAndServe(config.WebServer.Port, nil))
+	log.Fatal(http.ListenAndServe(":8080", nil))
 }
 
 func indexPagePreview(w http.ResponseWriter, r *http.Request) {
