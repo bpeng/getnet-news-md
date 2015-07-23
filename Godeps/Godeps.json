@@ -1,34 +1,19 @@
 {
-	"ImportPath": "github.com/GeoNet/haz-web-admin",
+	"ImportPath": "github.com/GeoNet/geonet-news-md",
 	"GoVersion": "go1.4.2",
 	"Deps": [
-		{
-			"ImportPath": "github.com/AdRoll/goamz/aws",
-			"Rev": "e26fcce2dc59b09e5d072a63511fb5612b92eb2e"
-		},
-		{
-			"ImportPath": "github.com/GeoNet/Golang-Ellipsoid/ellipsoid",
-			"Rev": "5a1ed895422f6c368aa215e90ff758835205d896"
-		},
 		{
 			"ImportPath": "github.com/GeoNet/cfg",
 			"Rev": "76198d1c294c29320882c8626ed185aef602108d"
 		},
 		{
-			"ImportPath": "github.com/GeoNet/goamz/sns",
-			"Rev": "e0af8b0b22517e9fb1d6a4438fa8269c3e834d2d"
+			"ImportPath": "github.com/russross/blackfriday",
+			"Comment": "v1.2-79-g386ef80",
+			"Rev": "386ef80f18233ea97960e855a54382ec446c6637"
 		},
 		{
-			"ImportPath": "github.com/GeoNet/log/logentries",
-			"Rev": "18c2731b9dd6d1f74215d1018b21f7b8d270d4fe"
-		},
-		{
-			"ImportPath": "github.com/GeoNet/metrics",
-			"Rev": "5161e09d1ca5d85798d090752c2f7d5ab9ab6e17"
-		},
-		{
-			"ImportPath": "github.com/GeoNet/msg",
-			"Rev": "ffee4c118b686f86069e99f5b620b22780cb48c7"
+			"ImportPath": "github.com/shurcooL/sanitized_anchor_name",
+			"Rev": "11a20b799bf22a02808c862eb6ca09f7fb38f84a"
 		}
 	]
 }
