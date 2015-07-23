@@ -25,7 +25,10 @@ func init() {
 }
 
 func getFileNameForTitle(title string) string {
+	//get rid of offending chars
 	fleName := strings.Replace(title, "/", "-", -1)
+	fleName = strings.Replace(title, ":", "-", -1)
+	//replace space
 	fleName = strings.Replace(fleName, " ", "_", -1)
 	//check existence
 	return fleName

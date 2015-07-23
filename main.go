@@ -24,6 +24,7 @@ func init() {
 		templates = make(map[string]*template.Template)
 	}
 	templates["index"] = template.Must(template.ParseFiles("tmpl/base.tmpl", "tmpl/index.tmpl"))
+	templates["index1"] = template.Must(template.ParseFiles("tmpl/base.tmpl", "tmpl/index1.tmpl"))
 	templates["edit"] = template.Must(template.ParseFiles("tmpl/base.tmpl", "tmpl/edit.tmpl"))
 	templates["preview"] = template.Must(template.ParseFiles("tmpl/preview.tmpl"))
 
@@ -52,6 +53,8 @@ func init() {
 func main() {
 	http.HandleFunc("/", indexPage)
 
+	http.HandleFunc("/preview", indexPagePreview)
+
 	http.HandleFunc("/edit", editPage)
 
 	http.HandleFunc("/save", savePage)
@@ -59,16 +62,51 @@ func main() {
 	log.Fatal(http.ListenAndServe(config.WebServer.Port, nil))
 }
 
+func indexPagePreview(w http.ResponseWriter, r *http.Request) {
+	pageData, err := getIndexPageData()
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusNotAcceptable)
+	}
+
+	//save the page to html
+	saveHtmlContent("index", "index1", pageData)
+	//copy css, images
+	err = CopyDir("css/", "_html/css/")
+	if err != nil {
+		fmt.Println(err)
+	} else {
+		fmt.Println("Directory copied")
+	}
+	err = CopyDir("_images/", "_html/_images/")
+	if err != nil {
+		fmt.Println(err)
+	} else {
+		fmt.Println("Directory copied")
+	}
+
+	renderTemplate(w, "index1", pageData)
+}
+
 func indexPage(w http.ResponseWriter, r *http.Request) {
+	pageData, err := getIndexPageData()
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusNotAcceptable)
+	}
+
+	renderTemplate(w, "index", pageData)
+}
+
+func getIndexPageData() (*PageData, error) {
 	//get md files
 	files, err := ioutil.ReadDir(md_src_dir)
 	if err != nil {
-		log.Fatal(err)
+		return nil, err
 	}
 	allMarkdown := make([]MarkdownData, 0)
 	for _, f := range files {
 		if strings.HasSuffix(f.Name(), ".md") {
 			name := strings.Replace(f.Name(), ".md", "", 1)
+			//log.Println("files filename: %s, name%s", f.Name(), name)
 			allMarkdown = append(allMarkdown,
 				MarkdownData{
 					FileName: name,
@@ -77,10 +115,8 @@ func indexPage(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 
-	pageData := PageData{Title: "GeoNet News",
-		AllMarkdown: allMarkdown}
-
-	renderTemplate(w, "index", pageData)
+	return &PageData{Title: "GeoNet News",
+		AllMarkdown: allMarkdown}, nil
 }
 
 func editPage(w http.ResponseWriter, r *http.Request) {
@@ -114,7 +150,7 @@ func savePage(w http.ResponseWriter, r *http.Request) {
 	//log.Println("content ", content);
 	preview := r.Form["preview"][0]
 	//log.Println("preview ", preview)
-	if preview == "1" {
+	if preview == "1" { //preview
 		//log.Println("preview ", preview)
 		previewPage(w, r, title, content)
 	} else if preview == "2" { //load images
@@ -144,7 +180,7 @@ func savePage(w http.ResponseWriter, r *http.Request) {
 				http.Error(w, err.Error(), http.StatusInternalServerError)
 				return
 			}
-			//  ![Image of yaktocat](https://octodex.github.com/images/yaktocat.png)
+			//make the images contents
 			imgTitle := files[i].Filename
 			last := strings.LastIndex(imgTitle, ".")
 
@@ -165,27 +201,35 @@ func savePage(w http.ResponseWriter, r *http.Request) {
 		//show edit page again
 		renderTemplate(w, "edit", pageData)
 
-	} else {
+	} else { //submit
 		//save md content
 		saveMdContent(title, content)
+		pageData := getHtmlPageData(title, content)
+		//save html preview
+		saveHtmlContent(title, "preview", pageData)
 		indexPage(w, r)
 	}
 }
 
 func previewPage(w http.ResponseWriter, r *http.Request, title string, content string) {
+	pageData := getHtmlPageData(title, content)
+	//save html preview
+	saveHtmlContent(title, "preview", pageData)
+	//render
+	renderTemplate(w, "edit", pageData)
+}
+
+func getHtmlPageData(title string, md string) *PageData {
 	mdData := MarkdownData{}
 	pageData := PageData{Title: "GeoNet News"}
 	mdData.Title = title
-	mdData.MdContent = content
+	mdData.MdContent = md
 
 	htmlRenderer := blackfriday.HtmlRenderer(htmlFlags, "", "")
-	mdData.HtmlContent = template.HTML(blackfriday.Markdown([]byte(content), htmlRenderer, htmlExt))
+	mdData.HtmlContent = template.HTML(blackfriday.Markdown([]byte(md), htmlRenderer, htmlExt))
 	pageData.MarkDown = mdData
 
-	//save html preview
-	saveHtmlContent(title, pageData)
-	//render
-	renderTemplate(w, "edit", pageData)
+	return &pageData
 }
 
 //render html page
@@ -201,7 +245,7 @@ func renderTemplate(w http.ResponseWriter, name string, data interface{}) {
 }
 
 //save html content to local directory
-func saveHtmlContent(title string, data interface{}) {
+func saveHtmlContent(title string, tmplName string, data interface{}) {
 	fleName := getFileNameForTitle(title)
 	f, err := os.Create(md_html_dir + fleName + ".html")
 	if err != nil {
@@ -209,7 +253,7 @@ func saveHtmlContent(title string, data interface{}) {
 	}
 	defer f.Close()
 	w := bufio.NewWriter(f)
-	tmpl, ok := templates["preview"]
+	tmpl, ok := templates[tmplName]
 	if !ok {
 		panic("The template preview does not exist.")
 	}
@@ -218,6 +262,62 @@ func saveHtmlContent(title string, data interface{}) {
 		panic(err)
 	}
 	w.Flush()
+}
+
+func CopyDir(source string, dest string) (err error) {
+
+	// get properties of source dir
+	sourceinfo, err := os.Stat(source)
+	if err != nil {
+		return err
+	}
+
+	// create dest dir
+	err = os.MkdirAll(dest, sourceinfo.Mode())
+	if err != nil {
+		return err
+	}
+
+	directory, _ := os.Open(source)
+	objects, err := directory.Readdir(-1)
+
+	for _, obj := range objects {
+		sourcefilepointer := source + "/" + obj.Name()
+		destinationfilepointer := dest + "/" + obj.Name()
+
+		// perform copy
+		err = CopyFile(sourcefilepointer, destinationfilepointer)
+		if err != nil {
+			fmt.Println(err)
+		}
+	}
+	return
+}
+
+func CopyFile(source string, dest string) (err error) {
+	sourcefile, err := os.Open(source)
+	if err != nil {
+		return err
+	}
+
+	defer sourcefile.Close()
+
+	destfile, err := os.Create(dest)
+	if err != nil {
+		return err
+	}
+
+	defer destfile.Close()
+
+	_, err = io.Copy(destfile, sourcefile)
+	if err == nil {
+		sourceinfo, err := os.Stat(source)
+		if err != nil {
+			err = os.Chmod(dest, sourceinfo.Mode())
+		}
+
+	}
+	return
 }
 
 type MarkdownData struct {
