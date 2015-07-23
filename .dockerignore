@@ -1,0 +1,6 @@
+.git
+.gitignore
+Dockerrun.aws.json
+geonet-news-md
+README*
+docker-run.sh
