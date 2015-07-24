@@ -50,6 +50,8 @@ func init() {
 
 }
 
+/**
+**/
 func main() {
 	http.HandleFunc("/", indexPage)
 
@@ -58,7 +60,7 @@ func main() {
 	http.HandleFunc("/edit", editPage)
 
 	http.HandleFunc("/save", savePage)
-
+    //!!IMPORTANT port have to be from os env for heroku !!!
     port := os.Getenv("PORT")
     log.Println("port", port)
 
