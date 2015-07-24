@@ -59,7 +59,14 @@ func main() {
 
 	http.HandleFunc("/save", savePage)
 
-	log.Fatal(http.ListenAndServe(":8080", nil))
+    port := os.Getenv("PORT")
+    log.Println("port", port)
+
+    if port == "" {
+        log.Fatal("$PORT must be set")
+    }
+
+	log.Fatal(http.ListenAndServe(":" + port, nil))
 }
 
 func indexPagePreview(w http.ResponseWriter, r *http.Request) {
