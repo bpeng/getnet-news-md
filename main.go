@@ -28,12 +28,12 @@ func init() {
 	templates["edit"] = template.Must(template.ParseFiles("tmpl/base.tmpl", "tmpl/edit.tmpl"))
 	templates["preview"] = template.Must(template.ParseFiles("tmpl/preview.tmpl"))
 
-	//handle css files
+	//handle image/css and generated html files
 	http.Handle("/css/", http.StripPrefix("/css/", http.FileServer(http.Dir("css"))))
 	http.Handle("/_images/", http.StripPrefix("/_images/", http.FileServer(http.Dir("_images"))))
-    http.Handle("/_html/", http.StripPrefix("/_html/", http.FileServer(http.Dir("_html"))))
-    http.Handle("/_html/css/", http.StripPrefix("/_html/css", http.FileServer(http.Dir("_html/css"))))
-    http.Handle("/_html/_images/", http.StripPrefix("/_html/_images", http.FileServer(http.Dir("_html/_images"))))
+	http.Handle("/_html/", http.StripPrefix("/_html/", http.FileServer(http.Dir("_html"))))
+	http.Handle("/_html/_images/", http.StripPrefix("/_htlm/_images/", http.FileServer(http.Dir("/html/_images"))))
+	http.Handle("/_html/css", http.StripPrefix("/_html/css", http.FileServer(http.Dir("_html/css"))))
 
 	// set up html options
 	htmlExt = 0
@@ -63,15 +63,15 @@ func main() {
 	http.HandleFunc("/edit", editPage)
 
 	http.HandleFunc("/save", savePage)
-    //!!IMPORTANT port have to be from os env for heroku !!!
-    port := os.Getenv("PORT")
-    log.Println("port", port)
+	//!!IMPORTANT port have to be from os env for heroku !!!
+	port := os.Getenv("PORT")
+	log.Println("port", port)
 
-    if port == "" {
-        log.Fatal("$PORT must be set")
-    }
+	if port == "" {
+		log.Fatal("$PORT must be set")
+	}
 
-	log.Fatal(http.ListenAndServe(":" + port, nil))
+	log.Fatal(http.ListenAndServe(":"+port, nil))
 }
 
 func indexPagePreview(w http.ResponseWriter, r *http.Request) {
@@ -87,16 +87,17 @@ func indexPagePreview(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		fmt.Println(err)
 	} else {
-		fmt.Println("Directory copied")
+		fmt.Println("css Directory copied")
 	}
 	err = CopyDir("_images/", "_html/_images/")
 	if err != nil {
 		fmt.Println(err)
 	} else {
-		fmt.Println("Directory copied")
+		fmt.Println("img Directory copied")
 	}
 
-	renderTemplate(w, "index1", pageData)
+	http.Redirect(w, r, "/_html/", http.StatusFound)
+	//renderTemplate(w, "index1", pageData)
 }
 
 func indexPage(w http.ResponseWriter, r *http.Request) {
