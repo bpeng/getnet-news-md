@@ -32,7 +32,7 @@ func init() {
 	http.Handle("/css/", http.StripPrefix("/css/", http.FileServer(http.Dir("css"))))
 	http.Handle("/_images/", http.StripPrefix("/_images/", http.FileServer(http.Dir("_images"))))
 	http.Handle("/_html/", http.StripPrefix("/_html/", http.FileServer(http.Dir("_html"))))
-	http.Handle("/_html/_images/", http.StripPrefix("/_htlm/_images/", http.FileServer(http.Dir("/html/_images"))))
+	http.Handle("/_html/_images/", http.StripPrefix("/_html/_images/", http.FileServer(http.Dir("_html/_images"))))
 	http.Handle("/_html/css", http.StripPrefix("/_html/css", http.FileServer(http.Dir("_html/css"))))
 
 	// set up html options
