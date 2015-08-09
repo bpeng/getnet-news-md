@@ -3,6 +3,16 @@ body {
     padding-top: 40px;
 }
 
+.walking-head{
+    height: 128px;
+    width: 512px;
+    color:dodgerblue;
+    background: url(../_images/skyline.png);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: 512px 128px;
+}
+
 /* fixes the quake map display problem*/
 .leaflet-container img{
     max-width: none;
