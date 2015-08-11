@@ -7,3 +7,6 @@
 ***集合地点***: [Oakleigh St Mungaraki](https://goo.gl/IMn8wK)
 
 ***集合时间***: 9.00 am Sunday 28 July
+
+
+![188-152C-Offmap1](_images/188-152C-Offmap1.jpg)
