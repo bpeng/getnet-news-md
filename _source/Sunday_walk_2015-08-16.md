@@ -8,5 +8,4 @@
 
 ***集合时间***: 9.00 am Sunday 16 August
 
-
-![go-walking2](_images/go-walking2.jpg)
+![go-walking3](_images/go-walking3.jpg)
