@@ -1,0 +1,7 @@
+{
+  "WebServer": {
+    "Port": ":8080",
+    "CNAME": "localhost",
+    "Production": false
+  }
+}

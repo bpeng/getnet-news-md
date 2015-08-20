@@ -128,7 +128,7 @@ func getIndexPageData() (*PageData, error) {
 		}
 	}
 
-	return &PageData{Title: "GeoNet News",
+	return &PageData{Title: "Walking Noticeboard",
 		AllMarkdown: allMarkdown}, nil
 }
 
@@ -136,7 +136,7 @@ func editPage(w http.ResponseWriter, r *http.Request) {
 	v := r.URL.Query()
 	mdName := v.Get("mdname")
 	mdData := MarkdownData{}
-	pageData := PageData{Title: "GeoNet News"}
+	pageData := PageData{Title: "Walking Noticeboard"}
 	if mdName != "" {
 		mdData.FileName = mdName
 		mdData.Title = getFileTitle(mdName)
@@ -207,7 +207,7 @@ func savePage(w http.ResponseWriter, r *http.Request) {
 		//append uploaded images to end of md content
 		content += imgContents
 		mdData := MarkdownData{}
-		pageData := PageData{Title: "GeoNet News"}
+		pageData := PageData{Title: "Walking Noticeboard"}
 		mdData.Title = title
 		mdData.MdContent = content
 		pageData.MarkDown = mdData
@@ -234,7 +234,7 @@ func previewPage(w http.ResponseWriter, r *http.Request, title string, content s
 
 func getHtmlPageData(title string, md string) *PageData {
 	mdData := MarkdownData{}
-	pageData := PageData{Title: "GeoNet News"}
+	pageData := PageData{Title: "Walking Noticeboard"}
 	mdData.Title = title
 	mdData.MdContent = md
 
