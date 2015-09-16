@@ -35,6 +35,10 @@ func init() {
 	http.Handle("/_html/_images/", http.StripPrefix("/_html/_images/", http.FileServer(http.Dir("_html/_images"))))
 	http.Handle("/_html/css", http.StripPrefix("/_html/css", http.FileServer(http.Dir("_html/css"))))
 
+	http.Handle("/html/", http.StripPrefix("/html/", http.FileServer(http.Dir("html"))))
+	http.Handle("/html/_images/", http.StripPrefix("/html/_images/", http.FileServer(http.Dir("html/_images"))))
+	http.Handle("/html/css", http.StripPrefix("/html/css", http.FileServer(http.Dir("html/css"))))
+
 	// set up html options
 	htmlExt = 0
 	htmlExt |= blackfriday.EXTENSION_NO_INTRA_EMPHASIS
@@ -239,7 +243,11 @@ func getHtmlPageData(title string, md string) *PageData {
 	mdData.MdContent = md
 
 	htmlRenderer := blackfriday.HtmlRenderer(htmlFlags, "", "")
-	mdData.HtmlContent = template.HTML(blackfriday.Markdown([]byte(md), htmlRenderer, htmlExt))
+	content := string(blackfriday.Markdown([]byte(md), htmlRenderer, htmlExt))
+	content = strings.Replace(content, "<img", "<img class='img-responsive'", -1)
+	mdData.HtmlContent = template.HTML(content)
+
+
 	pageData.MarkDown = mdData
 
 	return &pageData

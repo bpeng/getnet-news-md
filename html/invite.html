@@ -1,0 +1,86 @@
+
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>[彭夫雷, 郑涵月--婚礼请柬 ]</title>
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+        
+    <style type="text/css">
+
+      body { 
+        background: rgb(255,255,204); 
+        background: rgba(255,255,204, 0.5);
+        background-image: url('_images/xi1.png');
+        background-repeat: repeat; 
+     }
+     .container {
+        width: 300px;
+        background: rgb(255,255,204); 
+        background: rgba(255,255,204, 0.8);
+     }
+     #invitee_name{
+        font-weight: bold;
+        font-family: Helvetica, sans-serif;
+        font-size: 18px;
+     }
+     .invite_text_ss{        
+       font-family: Helvetica, sans-serif;
+       font-style:italic;
+       font-weight:bold;
+       font-size: 13px;
+     }
+    </style>
+    <script>
+    function getParamVal(name ) {
+       var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+       return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+     }
+
+    window.onload = function() {
+      //console.log("document.onload "  );
+       var invitee = getParamVal('name');
+       document.getElementById("invitee_name").innerHTML=invitee;
+    };
+   
+  </script>
+</head>
+
+<body>
+<div class="container">
+
+  <p><img src="_images/jiehun1c.png" /></p>
+  
+  <br/>
+
+ <div>
+    <img src="_images/yaoqing2a.png" />
+    <span id="invitee_name"></span>
+  </div>
+  
+  <br/>
+
+  <p><img src="_images/jiehun3c1.png" /></p>
+  <p>
+    <a href="http://www.ang.co.nz/">
+    <img src="_images/jiehun3c2b.png" />
+  </a>
+  </p>
+  <br/>
+  <p>
+    <a href="https://goo.gl/maps/i3TFo">
+     <img src="_images/jiehun3c3b.png" />
+    </a>
+  </p>
+  <p><img src="_images/jiehun3c5.png" /></p>
+
+  <span class='invite_text_ss'>
+     (请在2015年11月底以前回复，以便确定人数)
+  </span>
+   <br/><br/>
+</div>
+<br/><br/>
+
+</body>
+</html>

@@ -587,3 +587,9 @@ span.new{
      -moz-box-shadow: inset 0 1px 0 #ffffff;
           box-shadow: inset 0 1px 0 #ffffff;
 }
+
+.wrapper { float: left; clear: left; display: table; table-layout: fixed; }
+img.img-responsive { display: table-cell; max-width: 100%; }
+
+.col-md-12 { width: 100%; }
+
