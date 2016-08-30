@@ -26,7 +26,7 @@ func init() {
 	templates["index"] = template.Must(template.ParseFiles("tmpl/base.tmpl", "tmpl/index.tmpl"))
 	templates["index1"] = template.Must(template.ParseFiles("tmpl/base.tmpl", "tmpl/index1.tmpl"))
 	templates["edit"] = template.Must(template.ParseFiles("tmpl/base.tmpl", "tmpl/edit.tmpl"))
-	templates["preview"] = template.Must(template.ParseFiles("tmpl/preview.tmpl"))
+	templates["preview"] = template.Must(template.ParseFiles("tmpl/base.tmpl","tmpl/preview.tmpl"))
 
 	//handle image/css and generated html files
 	http.Handle("/css/", http.StripPrefix("/css/", http.FileServer(http.Dir("css"))))
@@ -79,7 +79,7 @@ func main() {
 }
 
 func indexPagePreview(w http.ResponseWriter, r *http.Request) {
-	pageData, err := getIndexPageData()
+	pageData, err := getIndexPageData(false)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusNotAcceptable)
 	}
@@ -105,7 +105,7 @@ func indexPagePreview(w http.ResponseWriter, r *http.Request) {
 }
 
 func indexPage(w http.ResponseWriter, r *http.Request) {
-	pageData, err := getIndexPageData()
+	pageData, err := getIndexPageData(true)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusNotAcceptable)
 	}
@@ -113,26 +113,32 @@ func indexPage(w http.ResponseWriter, r *http.Request) {
 	renderTemplate(w, "index", pageData)
 }
 
-func getIndexPageData() (*PageData, error) {
+func getIndexPageData(allPages bool) (*PageData, error) {
 	//get md files
 	files, err := ioutil.ReadDir(md_src_dir)
 	if err != nil {
 		return nil, err
 	}
 	allMarkdown := make([]MarkdownData, 0)
-	for _, f := range files {
+
+	for i := len(files) - 1; i >= 0; i-- {
+		f := files[i]
+
+	//for _, f := range files {
 		if strings.HasSuffix(f.Name(), ".md") {
 			name := strings.Replace(f.Name(), ".md", "", 1)
 			//log.Println("files filename: %s, name%s", f.Name(), name)
-			allMarkdown = append(allMarkdown,
+			if(allPages || strings.Contains(name, "walk")){//only the sunday walk
+				allMarkdown = append(allMarkdown,
 				MarkdownData{
 					FileName: name,
 					Title:    getFileTitle(name),
 				})
+			}
 		}
 	}
 
-	return &PageData{Title: "Walking Noticeboard",
+	return &PageData{Title: "走路通知-总目录", LinkDisable: "1",
 		AllMarkdown: allMarkdown}, nil
 }
 
@@ -161,7 +167,7 @@ func savePage(w http.ResponseWriter, r *http.Request) {
 
 	title := r.Form["postTitle"][0]
 
-	log.Println("title ", title)
+	log.Println("savePage title ", title)
 
 	content := r.Form["postContent"][0]
 	//log.Println("content ", content);
@@ -211,10 +217,11 @@ func savePage(w http.ResponseWriter, r *http.Request) {
 		//append uploaded images to end of md content
 		content += imgContents
 		mdData := MarkdownData{}
-		pageData := PageData{Title: "Walking Noticeboard"}
-		mdData.Title = title
+		pageData := PageData{Title: "走路通知-总目录"}
+		mdData.Title = "" + title
 		mdData.MdContent = content
 		pageData.MarkDown = mdData
+		pageData.LinkDisable = "1"
 		//show edit page again
 		renderTemplate(w, "edit", pageData)
 
@@ -239,14 +246,13 @@ func previewPage(w http.ResponseWriter, r *http.Request, title string, content s
 func getHtmlPageData(title string, md string) *PageData {
 	mdData := MarkdownData{}
 	pageData := PageData{Title: "Walking Noticeboard"}
-	mdData.Title = title
+	mdData.Title = "" + title
 	mdData.MdContent = md
 
 	htmlRenderer := blackfriday.HtmlRenderer(htmlFlags, "", "")
 	content := string(blackfriday.Markdown([]byte(md), htmlRenderer, htmlExt))
 	content = strings.Replace(content, "<img", "<img class='img-responsive'", -1)
 	mdData.HtmlContent = template.HTML(content)
-
 
 	pageData.MarkDown = mdData
 
@@ -266,8 +272,14 @@ func renderTemplate(w http.ResponseWriter, name string, data interface{}) {
 }
 
 //save html content to local directory
-func saveHtmlContent(title string, tmplName string, data interface{}) {
+func saveHtmlContent(title string, tmplName string, data *PageData) {
 	fleName := getFileNameForTitle(title)
+
+	//log.Println("##1 title pageData ", title,  data.Title)
+	//get page title
+	getTitleForPage(data, title)
+	log.Println("##2 title pageData ", title,  data.Title)
+
 	f, err := os.Create(md_html_dir + fleName + ".html")
 	if err != nil {
 		panic(err)
@@ -342,14 +354,16 @@ func CopyFile(source string, dest string) (err error) {
 }
 
 type MarkdownData struct {
-	Title       string
+	Title       string //to be displayed on the edit form title field
 	FileName    string
 	MdContent   string
 	HtmlContent template.HTML
 }
 
 type PageData struct {
-	Title       string
+	Title       string   //to be displayed on page header <title></title>
+	LinkDisable string   //link to be disabled on footer bar (1,2,3,4)
+	FileName    string
 	AllMarkdown []MarkdownData
 	MarkDown    MarkdownData
 }

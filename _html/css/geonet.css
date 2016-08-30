@@ -1,6 +1,6 @@
 body {
     background-color:#FBFBFB;
-    padding-top: 40px;
+    padding-top: 2px;
 }
 
 .walking-head{
@@ -593,3 +593,13 @@ img.img-responsive { display: table-cell; max-width: 100%; }
 
 .col-md-12 { width: 100%; }
 
+.centered {
+       display: block;
+       margin-left: auto;
+       margin-right: auto
+     }
+.disabled {
+      pointer-events: none;
+      cursor: default;
+      opacity: 0.6;
+     }

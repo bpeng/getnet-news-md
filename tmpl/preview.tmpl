@@ -1,31 +1,6 @@
 <!--the html preview page to be exported -->
-{{ define "base" }}
-<html>
-<head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>走路通知-{{.MarkDown.Title}}</title>
-    <link rel="icon" type="image/png" href="_images/walking.png"/>
-    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
-       <style type="text/css">
-        .container {
-           margin-top: 10px;
-        }
-        .centered {
-          display: block;
-          margin-left: auto;
-          margin-right: auto
-        }
-       </style>
-</head>
-<body>
-  <div class="container centered col-md-12">
-          {{.MarkDown.HtmlContent}}
-  </div>
-
-</body>
-</html>
+{{ define "content" }}
+    {{.MarkDown.HtmlContent}}
 {{ end }}
 
 
