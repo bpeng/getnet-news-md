@@ -3,21 +3,19 @@
 <br/>
 ##### **时间**: Sunday 11 September 2016
 <br/>
-##### **路线**: [Battle hill farm forest park](http://tracks.org.nz/area/show/13)
-<br/>
-##### **集合地点**: [610 Paekakariki Hill Rd, Pauatahanui](https://goo.gl/maps/igwV5yePTqr)
-<br/>
-##### **集合时间**: 9.00 am 
+##### **路线**: [Cannon Point Walkway](http://tracks.org.nz/track/show/199)
 
 <br/>
+##### **集合时间/地点**:
+
+ 1. 9.00 am [Harcourt park, Upper Hutt](https://goo.gl/maps/18atmVwtXrE2)
+<br/> or <br/>
+ 2.  8.40 am  [Avalon Park](https://goo.gl/maps/nHFRB5nMJLp) (拼车前往集合地点1)
 
 
-
-
-
-
-
-![battle_hill2](_images/battle_hill2.jpg)
 <br/>
+```有意参加的群友请告知你选择去哪里集合.```
+<br/><br/>
 
-![battle_hill1](_images/battle_hill1.jpg)
+
+![canon_point2](_images/canon_point2.jpg)
