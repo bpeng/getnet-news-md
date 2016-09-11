@@ -1,6 +1,9 @@
 ### 群相册
 ``` 点击查看更多照片 ```
 
+cannon_point20160911<br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/352T03" title="cannon_point20160911"><img src="https://c5.staticflickr.com/9/8544/29492365412_e80c30cde3_z.jpg" width="640" height="426" alt="cannon_point20160911"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
 kaitoke-twin-lakes20160904 <br/>
 <a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/n6144q" title="kaitoke-twin-lakes20160904"><img src="https://c3.staticflickr.com/9/8195/28816267754_21f90b3937_z.jpg" width="480" height="640" alt="kaitoke-twin-lakes20160904"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
