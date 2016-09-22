@@ -1,25 +1,18 @@
 ![skyline](_images/skyline2.png)
 
-<br/>
-##### **时间**: Sunday 2 October 2016
-<br/>
-##### **路线**: [Battle hill farm forest park](http://tracks.org.nz/area/show/13)
-<br/>
-##### **集合地点**: [610 Paekakariki Hill Rd, Pauatahanui](https://goo.gl/maps/igwV5yePTqr)
-<br/>
-##### **集合时间**: 9.00 am 
+***时间***: Sunday 2 October 2016
 
-<br/>
+***路线***: [Korokoro Valley](http://tracks.org.nz/track/show/99)
 
+***集合地点***: [Cornish St. Petone](https://goo.gl/maps/T1RFsfR97ES2)
+
+***集合时间***: 9.00 am
+
+***路程***: 约 10 km， 时间 3.5 小时
 
 
 
 
-
-
-
-
-![battle_hill2](_images/battle_hill2.jpg)
-<br/>
+![korokoro1](_images/korokoro1.jpg)
 
 

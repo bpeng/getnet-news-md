@@ -1,6 +1,9 @@
 ### 群相册
 ``` 点击查看更多照片 ```
 
+pencarrow_head20160925<br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/St642T" title="pencarrow_head20160925"><img src="https://c6.staticflickr.com/6/5689/29823134221_9241962976_z.jpg" width="640" height="480" alt="pencarrow_head20160925"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
 cannon_point20160911<br/>
 <a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/352T03" title="cannon_point20160911"><img src="https://c5.staticflickr.com/9/8544/29492365412_e80c30cde3_z.jpg" width="640" height="426" alt="cannon_point20160911"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
