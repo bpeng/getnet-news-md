@@ -1,6 +1,9 @@
 ### 群相册
 ``` 点击查看更多照片 ```
 
+korokoro_20161016<br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/000769" title="korokoro_20161016"><img src="https://c8.staticflickr.com/6/5818/30352438095_ae9453b7af_z.jpg" width="640" height="480" alt="korokoro_20161016"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
 pencarrow_head20160925<br/>
 <a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/St642T" title="pencarrow_head20160925"><img src="https://c6.staticflickr.com/6/5689/29823134221_9241962976_z.jpg" width="640" height="480" alt="pencarrow_head20160925"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
