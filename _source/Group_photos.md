@@ -1,6 +1,12 @@
 ### 群相册
 ``` 点击查看更多照片 ```
 
+butterfly-creek_20161030<br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/3o8Sfx" title="butterfly-creek20161030"><img src="https://c7.staticflickr.com/6/5657/30019168454_e32750e2c6_z.jpg" width="480" height="640" alt="butterfly-creek20161030"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+whakanui_20161023<br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/744Y81" title="whakanui_20161023"><img src="https://c1.staticflickr.com/6/5777/30207972080_642b6d57dd_z.jpg" width="640" height="480" alt="whakanui_20161023"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
 korokoro_20161016<br/>
 <a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/000769" title="korokoro_20161016"><img src="https://c8.staticflickr.com/6/5818/30352438095_ae9453b7af_z.jpg" width="640" height="480" alt="korokoro_20161016"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
