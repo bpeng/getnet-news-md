@@ -1,25 +1,16 @@
 ![skyline](_images/skyline2.png)
 
 <br/>
-##### **时间**: Sunday 6 November 2016
+##### **时间**: Sunday 06 November 2016
 <br/>
-##### **路线**: [Battle hill farm forest park](http://tracks.org.nz/area/show/13)
+##### **路线**: [Belmont @ Oakleigh St.](http://tracks.org.nz/track/show/110)
 <br/>
-##### **集合地点**: [610 Paekakariki Hill Rd, Pauatahanui](https://goo.gl/maps/igwV5yePTqr)
+##### **集合地点**: [Oakleigh St Maungaraki](https://goo.gl/maps/9xS8PoNQxwv)
 <br/>
 ##### **集合时间**: 9.00 am 
 
 <br/>
-
-
-
-
-
-
-
-
-
-![battle_hill2](_images/battle_hill2.jpg)
 <br/>
 
 
+![belmont_dam3](_images/belmont_dam3.jpg)
