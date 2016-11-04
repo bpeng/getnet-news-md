@@ -1,6 +1,9 @@
 ### 群相册
 ``` 点击查看更多照片 ```
 
+dry_creek20161120<br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/1Wv6N0" title="dry_creek20161120"><img src="https://c5.staticflickr.com/6/5703/30753257700_0f1f65d67a_z.jpg" width="640" height="480" alt="dry_creek20161120"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
 butterfly-creek_20161030<br/>
 <a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/3o8Sfx" title="butterfly-creek20161030"><img src="https://c7.staticflickr.com/6/5657/30019168454_e32750e2c6_z.jpg" width="480" height="640" alt="butterfly-creek20161030"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 

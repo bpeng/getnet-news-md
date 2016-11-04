@@ -26,7 +26,7 @@ func init() {
 	templates["index"] = template.Must(template.ParseFiles("tmpl/base.tmpl", "tmpl/index.tmpl"))
 	templates["index1"] = template.Must(template.ParseFiles("tmpl/base.tmpl", "tmpl/index1.tmpl"))
 	templates["edit"] = template.Must(template.ParseFiles("tmpl/base.tmpl", "tmpl/edit.tmpl"))
-	templates["preview"] = template.Must(template.ParseFiles("tmpl/base.tmpl","tmpl/preview.tmpl"))
+	templates["preview"] = template.Must(template.ParseFiles("tmpl/base.tmpl", "tmpl/preview.tmpl"))
 
 	//handle image/css and generated html files
 	http.Handle("/css/", http.StripPrefix("/css/", http.FileServer(http.Dir("css"))))
@@ -72,7 +72,9 @@ func main() {
 	log.Println("port", port)
 
 	if port == "" {
-		log.Fatal("$PORT must be set")
+		//log.Fatal("$PORT must be set")
+		port = "8088"
+
 	}
 
 	log.Fatal(http.ListenAndServe(":"+port, nil))
@@ -124,16 +126,16 @@ func getIndexPageData(allPages bool) (*PageData, error) {
 	for i := len(files) - 1; i >= 0; i-- {
 		f := files[i]
 
-	//for _, f := range files {
+		//for _, f := range files {
 		if strings.HasSuffix(f.Name(), ".md") {
 			name := strings.Replace(f.Name(), ".md", "", 1)
 			//log.Println("files filename: %s, name%s", f.Name(), name)
-			if(allPages || strings.Contains(name, "walk")){//only the sunday walk
+			if allPages || strings.Contains(name, "walk") { //only the sunday walk
 				allMarkdown = append(allMarkdown,
-				MarkdownData{
-					FileName: name,
-					Title:    getFileTitle(name),
-				})
+					MarkdownData{
+						FileName: name,
+						Title:    getFileTitle(name),
+					})
 			}
 		}
 	}
@@ -182,7 +184,7 @@ func savePage(w http.ResponseWriter, r *http.Request) {
 		//get the *fileheaders
 		files := m.File["imagefiles"]
 		var imgContents string
-		for i, _ := range files {
+		for i := range files {
 			//for each fileheader, get a handle to the actual file
 			file, err := files[i].Open()
 			defer file.Close()
@@ -278,7 +280,7 @@ func saveHtmlContent(title string, tmplName string, data *PageData) {
 	//log.Println("##1 title pageData ", title,  data.Title)
 	//get page title
 	getTitleForPage(data, title)
-	log.Println("##2 title pageData ", title,  data.Title)
+	log.Println("##2 title pageData ", title, data.Title)
 
 	f, err := os.Create(md_html_dir + fleName + ".html")
 	if err != nil {
@@ -361,8 +363,8 @@ type MarkdownData struct {
 }
 
 type PageData struct {
-	Title       string   //to be displayed on page header <title></title>
-	LinkDisable string   //link to be disabled on footer bar (1,2,3,4)
+	Title       string //to be displayed on page header <title></title>
+	LinkDisable string //link to be disabled on footer bar (1,2,3,4)
 	FileName    string
 	AllMarkdown []MarkdownData
 	MarkDown    MarkdownData

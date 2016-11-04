@@ -1,25 +1,15 @@
 ![skyline](_images/skyline2.png)
 
 <br/>
-##### **时间**: Sunday 13 November 2016
+##### **时间**: Sunday 13 November
 <br/>
-##### **路线**: [Battle hill farm forest park](http://tracks.org.nz/area/show/13)
+##### **路线**: [Kau Kau/Skyline](http://tracks.org.nz/track/show/159)
 <br/>
-##### **集合地点**: [610 Paekakariki Hill Rd, Pauatahanui](https://goo.gl/maps/igwV5yePTqr)
+##### **集合地点**: [End of Truscott  Ave, Johnsonville](https://goo.gl/maps/qv6csq3GzCq)
 <br/>
-##### **集合时间**: 9.00 am 
+##### **集合时间**: 9.00 am, 往返约3 小时
 
 <br/>
-
-
-
-
-
-
-
-
-
-![battle_hill2](_images/battle_hill2.jpg)
-<br/>
+![kaukau4](_images/kaukau4.jpg)
 
 

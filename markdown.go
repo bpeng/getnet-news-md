@@ -38,17 +38,17 @@ func getFileNameForTitle(title string) string {
  * get the title to display on the html page
  * and the link to be disabled
  */
-func getTitleForPage(pageData *PageData, title string)  {
-	if strings.Contains(title, "photos") {//Group photos
+func getTitleForPage(pageData *PageData, title string) {
+	if strings.Contains(title, "photos") { //Group photos
 		pageData.Title = "惠村爬友群-群相册"
 		pageData.LinkDisable = "3"
-	}else if strings.Contains(title, "About") {//About group
+	} else if strings.Contains(title, "About") { //About group
 		pageData.Title = "惠村爬友群-简介"
 		pageData.LinkDisable = "2"
-	}else if strings.Contains(title, "Aware") {//Aware
+	} else if strings.Contains(title, "Aware") { //Aware
 		pageData.Title = "惠村爬友群-注意事项"
 		pageData.LinkDisable = "4"
-	}else if strings.Contains(title, "walk") {//normal
+	} else if strings.Contains(title, "walk") { //normal
 		pageData.Title = "走路通知-" + title
 		pageData.LinkDisable = "0"
 	}
