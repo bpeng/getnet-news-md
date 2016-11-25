@@ -1,6 +1,12 @@
 ### 群相册
 ``` 点击查看更多照片 ```
 
+wainuiomata-recreation20161204 <br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/ZrrN96" title="wainuiomata-recreation20161204"><img src="https://c1.staticflickr.com/6/5603/31261851952_29403b2462_z.jpg" width="640" height="426" alt="wainuiomata-recreation20161204"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+belmont_oakleigh_20161127<br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/L85J88" title="belmont_oakleigh_20161127"><img src="https://c3.staticflickr.com/6/5812/31224468826_b21accdd35_z.jpg" width="640" height="480" alt="belmont_oakleigh_20161127"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
 dry_creek20161120<br/>
 <a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/1Wv6N0" title="dry_creek20161120"><img src="https://c5.staticflickr.com/6/5703/30753257700_0f1f65d67a_z.jpg" width="640" height="480" alt="dry_creek20161120"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
