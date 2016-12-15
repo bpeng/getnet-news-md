@@ -1,6 +1,22 @@
 ### 群相册
 ``` 点击查看更多照片 ```
 
+wilton_bush_20170108 <br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/4J1295" title="wilton_bush_20170108"><img src="https://c6.staticflickr.com/1/313/31368847653_b8df2f7fd5_z.jpg" width="640" height="427" alt="wilton_bush_20170108"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+catchpool_valley_20170101 <br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/Eh1z56" title="catchpool_valley_20170101"><img src="https://c3.staticflickr.com/1/291/31639552010_e07257c40e_z.jpg" width="480" height="640" alt="catchpool_valley_20170101"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+
+20161230-end-Of-Year-Party<br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/1Eb087" title="2016endOfYearParty"><img src="https://c2.staticflickr.com/1/436/31168034073_7c3ab302a8_z.jpg" width="640" height="427" alt="2016endOfYearParty"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+baring-head-20161225<br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/2CZqb8" title="baring-head-20161225"><img src="https://c2.staticflickr.com/1/602/31744227201_d71bd00cbc_z.jpg" width="640" height="480" alt="baring-head-20161225"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+battle_hill_20161218<br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/A13907" title="battle_hill_20161218"><img src="https://c2.staticflickr.com/1/373/31710235905_ea452e13ef_z.jpg" width="640" height="480" alt="battle_hill_20161218"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
 wainuiomata-recreation20161204 <br/>
 <a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/ZrrN96" title="wainuiomata-recreation20161204"><img src="https://c1.staticflickr.com/6/5603/31261851952_29403b2462_z.jpg" width="640" height="426" alt="wainuiomata-recreation20161204"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
