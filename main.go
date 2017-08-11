@@ -35,6 +35,10 @@ func init() {
 	http.Handle("/_html/_images/", http.StripPrefix("/_html/_images/", http.FileServer(http.Dir("_html/_images"))))
 	http.Handle("/_html/css", http.StripPrefix("/_html/css", http.FileServer(http.Dir("_html/css"))))
 
+	http.Handle("/pages/", http.StripPrefix("/pages/", http.FileServer(http.Dir("pages"))))
+	http.Handle("/pages/_images/", http.StripPrefix("/_html/_images/", http.FileServer(http.Dir("pages/_images"))))
+	http.Handle("/pages/css", http.StripPrefix("/pages/css", http.FileServer(http.Dir("pages/css"))))
+
 	http.Handle("/html/", http.StripPrefix("/html/", http.FileServer(http.Dir("html"))))
 	http.Handle("/html/_images/", http.StripPrefix("/html/_images/", http.FileServer(http.Dir("html/_images"))))
 	http.Handle("/html/css", http.StripPrefix("/html/css", http.FileServer(http.Dir("html/css"))))
@@ -89,20 +93,20 @@ func indexPagePreview(w http.ResponseWriter, r *http.Request) {
 	//save the page to html
 	saveHtmlContent("index", "index1", pageData)
 	//copy css, images
-	err = CopyDir("css/", "_html/css/")
+	err = CopyDir("css/", "pages/css/")
 	if err != nil {
 		fmt.Println(err)
 	} else {
 		fmt.Println("css Directory copied")
 	}
-	err = CopyDir("_images/", "_html/_images/")
+	err = CopyDir("_images/", "pages/_images/")
 	if err != nil {
 		fmt.Println(err)
 	} else {
 		fmt.Println("img Directory copied")
 	}
 
-	http.Redirect(w, r, "/_html/", http.StatusFound)
+	http.Redirect(w, r, "/pages/", http.StatusFound)
 	//renderTemplate(w, "index1", pageData)
 }
 

@@ -8,7 +8,7 @@ import (
 
 const (
 	md_src_dir  = "_source/"
-	md_html_dir = "_html/"
+	md_html_dir = "pages/"
 	img_dir     = "_images/"
 )
 
