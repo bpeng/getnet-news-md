@@ -36,7 +36,7 @@ func init() {
 	http.Handle("/_html/css", http.StripPrefix("/_html/css", http.FileServer(http.Dir("_html/css"))))
 
 	http.Handle("/pages/", http.StripPrefix("/pages/", http.FileServer(http.Dir("pages"))))
-	http.Handle("/pages/_images/", http.StripPrefix("/_html/_images/", http.FileServer(http.Dir("pages/_images"))))
+	http.Handle("/pages/_images/", http.StripPrefix("/pages/_images/", http.FileServer(http.Dir("pages/_images"))))
 	http.Handle("/pages/css", http.StripPrefix("/pages/css", http.FileServer(http.Dir("pages/css"))))
 
 	http.Handle("/html/", http.StripPrefix("/html/", http.FileServer(http.Dir("html"))))
