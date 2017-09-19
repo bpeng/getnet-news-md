@@ -1,6 +1,24 @@
 ### 群相册
 ``` 点击查看更多照片 ```
 
+kaitoke_cherry_blossom_party_20170917<br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/11476803@N00/albums/72157686304817160" title="kaitoke_cherry_blossom_party_20170917"><img src="https://farm5.staticflickr.com/4427/37154216171_1539d483d1_z.jpg" width="640" height="480" alt="kaitoke_cherry_blossom_party_20170917"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+wrights_hill_fence_line_20170910 <br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/07065A" title="wrights_hill_fence_line_20170910"><img src="https://farm5.staticflickr.com/4382/36963359672_765f679620_z.jpg" width="640" height="475" alt="wrights_hill_fence_line_20170910"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+ rimutaka_rail_trail_20170827 <br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/73nf85" title="rimutaka_rail_trail_20170827"><img src="https://farm5.staticflickr.com/4380/36023729213_7aa4a41f8b_z.jpg" width="640" height="475" alt="rimutaka_rail_trail_20170827"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+battle_hill_yangs_farewell_20170820 <br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/B1sc30" title="battle_hill_yangs_farewell_20170820"><img src="https://farm5.staticflickr.com/4394/36531268262_df29c40f5a_z.jpg" width="640" height="475" alt="battle_hill_yangs_farewell_20170820"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+tunnel_gully_20170730 <br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/H225E6" title="tunnel_gully_20170730"><img src="https://farm5.staticflickr.com/4300/36092087932_dcc4efc93e_z.jpg" width="640" height="475" alt="tunnel_gully_20170730"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+cannons_point_20170723 <br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/05s9XM" title="cannons_point_20170723"><img src="https://farm5.staticflickr.com/4326/35926966022_9ff9b8eea4_z.jpg" width="640" height="475" alt="cannons_point_20170723"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
 belmont_trig_20170716 <br/>
 <a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/54iRav" title="belmont_trig_20170716"><img src="https://farm5.staticflickr.com/4292/35139560243_a7fcc0e81f_z.jpg" width="640" height="475" alt="belmont_trig_20170716"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
