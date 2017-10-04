@@ -1,6 +1,29 @@
 ### 群相册
 ``` 点击查看更多照片 ```
 
+
+karapoti_gorge_20171126<br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/n7ARb4" title="karapoti_gorge_20171126"><img src="https://farm5.staticflickr.com/4571/38588226576_26f33af2ec_z.jpg" width="640" height="480" alt="karapoti_gorge_20171126"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+cannon_point_2017119<br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/410S6M" title="cannon_point_2017119"><img src="https://farm5.staticflickr.com/4583/37622442105_f15a18c490_z.jpg" width="480" height="640" alt="cannon_point_2017119"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+dry_creek_20171105<br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/585bt9" title="dry_creek_20171105"><img src="https://farm5.staticflickr.com/4487/26403777949_9af5571b1b_z.jpg" width="640" height="425" alt="dry_creek_20171105"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+
+tunnel_gully_20171029<br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/Z9VDFs" title="tunnel_gully_20171029"><img src="https://farm5.staticflickr.com/4472/37298209324_ee58bd0f64_z.jpg" width="640" height="480" alt="tunnel_gully_20171029"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+catchpool_20171022<br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/Ls75Q4" title="catchpool_20171022"><img src="https://farm5.staticflickr.com/4512/37796074406_fdba2853bc_z.jpg" width="640" height="480" alt="catchpool_20171022"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+baring_head_20171008<br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/7sV4Kc" title="baring_head_20171008"><img src="https://farm5.staticflickr.com/4456/37567115141_97efaeb492_z.jpg" width="640" height="480" alt="baring_head_20171008"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+city2sea_20170924<br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/2X5Tm8" title="city2sea_20170924"><img src="https://farm5.staticflickr.com/4365/36603216873_4d193bbc71_z.jpg" width="640" height="480" alt="city2sea_20170924"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
 kaitoke_cherry_blossom_party_20170917<br/>
 <a data-flickr-embed="true"  href="https://www.flickr.com/photos/11476803@N00/albums/72157686304817160" title="kaitoke_cherry_blossom_party_20170917"><img src="https://farm5.staticflickr.com/4427/37154216171_1539d483d1_z.jpg" width="640" height="480" alt="kaitoke_cherry_blossom_party_20170917"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
