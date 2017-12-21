@@ -1,6 +1,14 @@
 ### 群相册
 ``` 点击查看更多照片 ```
 
+kaitoke_20171217<br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/P5V8M5" title="kaitoke_20171217"><img src="https://farm5.staticflickr.com/4636/39068994322_d833a1332e_z.jpg" width="640" height="480" alt="kaitoke_20171217"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+whakanui_track_20171210<br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/73nTHK" title="whakanui_track_20171210"><img src="https://farm5.staticflickr.com/4574/27200474259_f67d572d28_z.jpg" width="640" height="480" alt="whakanui_track_20171210"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+butterfly_creek_20171203<br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/918407" title="butterfly_creek_20171203"><img src="https://farm5.staticflickr.com/4524/38800340741_380af76b66_z.jpg" width="640" height="480" alt="butterfly_creek_20171203"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 karapoti_gorge_20171126<br/>
 <a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/n7ARb4" title="karapoti_gorge_20171126"><img src="https://farm5.staticflickr.com/4571/38588226576_26f33af2ec_z.jpg" width="640" height="480" alt="karapoti_gorge_20171126"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
