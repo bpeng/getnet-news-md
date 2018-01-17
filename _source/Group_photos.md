@@ -1,6 +1,21 @@
 ### 群相册
 ``` 点击查看更多照片 ```
 
+
+paekakariki_20180114 <br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/4dA067" title="paekakariki_20180114"><img src="https://farm5.staticflickr.com/4716/38972469404_ab2c61a50a_z.jpg" width="640" height="480" alt="paekakariki_20180114"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+
+catchpool_20180107  <br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/4r6705" title="catchpool_20180107"><img src="https://farm5.staticflickr.com/4727/25675504508_04bbfc3748_z.jpg" width="640" height="480" alt="catchpool_20180107"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+2017_2018_taranaki_trip  <br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/0J4m5a" title="2017_2018_taranaki_trip"><img src="https://farm5.staticflickr.com/4591/38689726274_730efe0467_z.jpg" width="640" height="480" alt="2017_2018_taranaki_trip"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+end_of_year_party_20171224  <br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/9569ta" title="end_of_year_party_20171224"><img src="https://farm5.staticflickr.com/4690/38545689204_9328a9921e_z.jpg" width="640" height="480" alt="2end_of_year_party_20171224"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+
 kaitoke_20171217<br/>
 <a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/P5V8M5" title="kaitoke_20171217"><img src="https://farm5.staticflickr.com/4636/39068994322_d833a1332e_z.jpg" width="640" height="480" alt="kaitoke_20171217"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
