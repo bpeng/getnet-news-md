@@ -1,21 +1,12 @@
 ![skyline](_images/skyline2.png)
 
-<br/>
-##### **时间**: Sunday 18 February 2018
-<br/>
-##### **路线**: [Butterfly Creek](http://tracks.org.nz/track/show/967)
-<br/>
-##### **集合地点**: [Rimu St, Eastbourne](https://www.google.co.nz/maps/place/41%C2%B017'25.7%22S+174%C2%B053'53.6%22E/@-41.2904722,174.8971279,18z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d-41.2904722!4d174.8982222)
-<br/>
-##### **集合时间**: 9.00 am
-<br/>
+***时间***: Sunday 18 February 2018
+
+***路线***: [Belmont Regional Park @Straton St](http://tracks.org.nz/track/show/152)
+
+***集合地点***: [Mungaraki shops](https://www.google.co.nz/maps/place/Maungaraki+Shops/@-41.2089113,174.8758241,15z/data=!4m12!1m6!3m5!1s0x6d38aba017bf1a3d:0x3359162d4214b6f5!2sMaungaraki+Shops!8m2!3d-41.208533!4d174.8783857!3m4!1s0x6d38aba017bf1a3d:0x3359162d4214b6f5!8m2!3d-41.208533!4d174.8783857)
+
+***集合时间***: 8.50 am Sunday 18 February
 
 
-
-<br/>
-
-
-
-
-
-![35002448083_cd0d0f646e_z](_images/35002448083_cd0d0f646e_z.jpg)
+![P1190997](_images/P1190997.jpg)
