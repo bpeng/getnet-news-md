@@ -2,7 +2,9 @@
 
 <br/>
 <div class="alert alert-danger">
-因微信禁止访问 Google Map， 如需使用本页中的地址链接， 请使用浏览器(Browser)打开。
+因微信禁止访问 Google Map， 如需使用本页中的地址链接， 
+<a href="_images/weichat_browser.png" target="_blank">
+请使用浏览器(Browser)打开</a>。
 </div>
 
 ##### **时间**: Sunday 25 March 2018
