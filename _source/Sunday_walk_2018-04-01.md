@@ -1,27 +1,22 @@
 ![skyline](_images/skyline2.png)
 <br/>
 <div class="alert alert-danger">
+请注意本周日夏令时(NZDT)结束， 请按标准时间(NZST)集合
+</div>
+<div class="alert alert-danger">
 因微信禁止访问 Google Map， 如需使用本页中的地址链接， 
 <a href="_images/weichat_browser.png" target="_blank">
 请使用浏览器(Browser)打开</a>。
 </div>
 <br/>
-##### **时间**: Sunday 1 April 2018
-<br/>
-##### **路线**: [Kaitoke Ridge Track @ Twin lakes](http://tracks.org.nz/track/show/1145)
-<br/>
-##### **集合地点**: [Avalon Park](https://www.google.co.nz/maps/place/41%C2%B011'40.7%22S+174%C2%B055'57.4%22E/@-41.1946389,174.9304224,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d-41.1946389!4d174.9326111)
-<br/>
-##### **集合时间**: 8.40 am, 集合后拼车前往 [Twin lakes Rd. carpark, Upper Hutt](https://www.google.co.nz/maps/place/41%C2%B004'45.6%22S+175%C2%B008'50.6%22E/@-41.079342,175.145184,17z/data=!4m5!3m4!1s0x0:0x0!8m2!3d-41.0793333!4d175.1473889)
- (熟悉路线的也可直接前往， 9.00 开始走路)` 
-<br/>
+***时间***:Sunday 1 April 2018
 
+***路线***: [Belmon trig](http://tracks.org.nz/track/show/100)
 
-<br/>
+***集合地点***: [Mungaraki shops](https://www.google.co.nz/maps/place/Maungaraki+Shops/@-41.2089113,174.8758241,15z/data=!4m12!1m6!3m5!1s0x6d38aba017bf1a3d:0x3359162d4214b6f5!2sMaungaraki+Shops!8m2!3d-41.208533!4d174.8783857!3m4!1s0x6d38aba017bf1a3d:0x3359162d4214b6f5!8m2!3d-41.208533!4d174.8783857)
+
+***集合时间***: 8.50 am Sunday 1 April
+
+![trig](_images/trig.JPG)
 <br/>
 
-
-
-
-
-![twin_lakes](_images/twin_lakes.jpg)
