@@ -1,8 +1,6 @@
 ![skyline](_images/skyline2.png)
 
-<br/>
-
-***时间***: Sunday 8 April 2018
+***时间***: Sunday 29 July 2018
 
 ***路线***: [Rimutaka Rail Trail](http://tracks.org.nz/track/show/213)
 

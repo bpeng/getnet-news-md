@@ -1,14 +1,14 @@
 ![skyline](_images/skyline2.png)
 
 
-**时间**: Sunday 8 January 2017
+**时间**: Sunday 30 December 2018
 
 **路线**: [Otari Wilton Bush](http://tracks.org.nz/track/show/572)
 
 **集合地点**: [150 Wilton Rd, Wilton](https://www.google.co.nz/maps/place/150+Wilton+Rd,+Wilton,+Wellington+6012/@-41.272407,174.743272,15z/data=!4m13!1m7!3m6!1s0x0:0x0!2zNDHCsDE2JzAzLjMiUyAxNzTCsDQ1JzMwLjkiRQ!3b1!8m2!3d-41.2675833!4d174.7585833!3m4!1s0x6d38b1c41da0426b:0x77f025334849d259!8m2!3d-41.2678648!4d174.7577583)
 
 
-**集合时间**: 9.00 am 8 January 2017
+**集合时间**: 9.00 am 23 December 2018
 
 <div class="alert alert-warning">
 

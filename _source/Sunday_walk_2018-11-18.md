@@ -2,7 +2,7 @@
 
 <br/>
 
-***时间***: Sunday 8 April 2018
+***时间***: Sunday 18 November 2018
 
 ***路线***: [Rimutaka Rail Trail](http://tracks.org.nz/track/show/213)
 

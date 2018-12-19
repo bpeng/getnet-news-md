@@ -2,6 +2,24 @@
 ``` 点击查看更多照片 ```
 
 
+
+kaitoke_cherry20180923 <br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/79S2pz" title="kaitoke_cherry20180923"><img src="https://farm2.staticflickr.com/1962/43109744450_079dfdb0fd_z.jpg" width="640" height="480" alt="kaitoke_cherry20180923"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+
+city2sea_20180826 <br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/HkMpr3" title="city2sea_20180826"><img src="https://farm2.staticflickr.com/1862/44272513181_2c2581164a_z.jpg" width="640" height="480" alt="city2sea_20180826"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+
+Belmont_dress_circle20180812 <br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/4q31y2" title="Belmont_dress_circle20180812"><img src="https://farm2.staticflickr.com/1836/30120508678_bb3fb94419_z.jpg" width="640" height="480" alt="Belmont_dress_circle20180812"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+belmont_20180722 <br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/t3cX5N" title="belmont_20180722"><img src="https://farm2.staticflickr.com/1802/41748713510_ab99406d02_z.jpg" width="640" height="480" alt="belmont_20180722"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+baring_head_20180617 <br/>
+<a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/x02975" title="baring_head_20180617"><img src="https://farm1.staticflickr.com/884/42846287041_1bfbccb68c_z.jpg" width="640" height="480" alt="baring_head_20180617"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
 paekakariki_20180114 <br/>
 <a data-flickr-embed="true"  href="https://www.flickr.com/gp/11476803@N00/4dA067" title="paekakariki_20180114"><img src="https://farm5.staticflickr.com/4716/38972469404_ab2c61a50a_z.jpg" width="640" height="480" alt="paekakariki_20180114"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
