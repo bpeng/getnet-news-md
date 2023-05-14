@@ -3,8 +3,6 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"github.com/GeoNet/cfg"
-	"github.com/russross/blackfriday"
 	"html/template"
 	"io"
 	"io/ioutil"
@@ -12,10 +10,11 @@ import (
 	"net/http"
 	"os"
 	"strings"
+
+	"github.com/russross/blackfriday"
 )
 
 var templates map[string]*template.Template
-var config = cfg.Load()
 var htmlFlags int
 var htmlExt int
 
